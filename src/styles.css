@@ -1,0 +1,118 @@
+body {
+  margin: 100px auto;
+}
+
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #f5f2fea6;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 auto;
+}
+h1 {
+  font-size: 96px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+.navigation-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.navigation-links a {
+  margin: 20px;
+  text-decoration: none;
+  padding: 20px 15px;
+
+  border-radius: 4px;
+}
+
+.contact-link {
+  color: white;
+  background-color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+}
+
+.about-link {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.back-link {
+  display: block;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  padding-top: 10px;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+img {
+  border-radius: 4px;
+  height: auto;
+}
+
+.primary-link {
+  color: white;
+  background-color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  text-decoration: none;
+  padding: 20px 15px;
+
+  border-radius: 4px;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .primary-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
+  .vanilla-weather-home-pic,
+  .weather-app-home-pic,
+  .coffeelover-home-pic {
+    display: none;
+  }
+}
